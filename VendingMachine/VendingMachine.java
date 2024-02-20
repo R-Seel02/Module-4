@@ -26,8 +26,8 @@ public class VendingMachine
         
 
         System.out.println("Which Snack would you like? ");
-        Scanner snackName = new Scanner(System.in);
-        snackChoice = snackName.nextLine();
+        Scanner scan = new Scanner(System.in);
+        snackChoice = scan.nextLine();
 
 
 
@@ -52,8 +52,26 @@ public class VendingMachine
             break;                      
         }
 
-        snackName.close();
+        
+        System.out.println("Would you like to purchase this snack? ");
+        String userConfirm = scan.nextLine();
+
+        if (userConfirm.equals("Yes")){
+            System.out.println("Okay despensing the " + snackChoice);
+        }
+        else if (userConfirm.equals("no")){
+
+            System.out.println("no snack was chosen" );
+
+        }
+        else {
+            System.out.println("Error, Please enter yes or no");
+        }
+
+        scan.close();
+
         
 
     }
+    
 }
