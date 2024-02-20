@@ -6,6 +6,9 @@ public class VendingMachine
 {
     public static void main(String[] args) 
     {
+        //Display welcome message and instructions
+        System.out.println("Welcome to our vending machine");
+
         //Display snack options
         System.out.println("Snack Options:");
         System.out.println("1.Lebron Ruffles");
@@ -22,7 +25,7 @@ public class VendingMachine
         double oreos = 2.25;
         
 
-        System.out.println("Which Snack would like? ");
+        System.out.println("Which Snack would you like? ");
         Scanner snackName = new Scanner(System.in);
         snackChoice = snackName.nextLine();
 
