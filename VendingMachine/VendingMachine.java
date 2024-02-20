@@ -48,9 +48,8 @@ public class VendingMachine
             System.out.println("That will cost " + oreos);
                 break;
             default:
-                break;
-
-                
+            System.out.println("Invalid choice, please select from the provided options.");
+            break;                      
         }
 
         snackName.close();
