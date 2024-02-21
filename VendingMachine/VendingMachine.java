@@ -114,6 +114,8 @@ public class VendingMachine
 
         scan.close();
 
+        System.out.println("Wow such an amazing snack choice! please avoid snack overconsumption");
+
     }
     
 }
